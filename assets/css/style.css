@@ -1,0 +1,474 @@
+@font-face {
+    font-family: rock;
+    src: url("../fonts/RockSalt-Regular.ttf");
+}
+
+@font-face {
+    font-family: nun;
+    src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-image: url("../img/dog_catching_snack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    align-self: center;
+    font-family: rock;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+header h3 {
+    font-size: 20pt;
+    font-family: nun;
+    color: #DF8480;
+    margin-top: 5rem;
+    padding-right: 2rem;
+    align-self: flex-end;
+    text-align: right;
+   
+}
+
+.whats,
+.how {
+    background-color: #DF8480;
+    color: #fff;
+    font-family: nun;
+    height: 5rem;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-variation-settings: "wght" 800;
+    font-size: 20pt;
+    vertical-align: middle;
+
+}
+
+.boxer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: nun;
+}
+
+.box h1 {
+
+    color: #DF8480;
+    text-align: center;
+    align-self: center;
+    font-family: nun;
+    font-variation-settings: "wght" 800;
+    font-size: 40pt;
+
+}
+
+.box h2 {
+    margin: 2rem 5rem;
+    text-align: center;
+}
+
+.back {
+    background-image: url("../img/dog_eating_cookies.jpg");
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.bowl {
+    background-image: url("../img/dog_bowl.png");
+    background-position: center;
+    background-size: contain;
+    height: 17rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 4.5rem;
+    font-family: nun;
+}
+
+.a {
+    order: 1;
+
+}
+
+.b {
+    order: 2;
+    align-self: flex-end;
+}
+
+.c {
+    order: 3;
+    margin-left: 1.5rem;
+}
+
+.after_bowl {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem 8rem;
+}
+
+footer {
+    background-color: #121212;
+    padding: 1rem 2rem;
+    font-family: nun;
+}
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 14pt;
+    padding: 0 4rem;
+}
+
+input[type="email"] {
+    height: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 100%;
+
+}
+
+input[type="submit"] {
+    height: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 100%;
+    background-color: #DF8480;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.footer_div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+footer p {
+    margin-top: 2rem;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (min-width:601px) {
+    .back_bowl {
+        display: flex;
+        width: 100%;
+    }
+
+    .back {
+        width: 50%;
+        height: 30vh;
+    }
+
+    .bowl {
+        width: 50%;
+        background-size: auto;
+        background-position: center;
+        height: 22rem;
+    }
+
+    form {
+        padding: 1rem 10rem;
+    }
+
+    .footer_div {
+        justify-content: flex-start;
+
+    }
+
+    footer p {
+        justify-content: flex-end;
+        align-self: flex-end;
+        text-align: end;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:901px) {
+    .back_bowl {
+        display: flex;
+        width: 100%;
+    }
+
+    .back {
+        width: 50%;
+        height: 30vh;
+    }
+
+    .bowl {
+        width: 50%;
+        background-size: auto;
+        background-position: center;
+        height: 22rem;
+    }
+
+    form {
+        padding: 1rem 22rem;
+    }
+
+    .footer_div {
+        justify-content: flex-start;
+    }
+
+    footer p {
+        margin-top: 5rem;
+    }
+
+    header {
+        background: none;
+    }
+
+    .new_back {
+        background-image: url("../img/dog_catching_snack.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 50%;
+    }
+
+    header span h3 {
+        margin: 0;
+        background-color: #DF8480;
+        color: #fff;
+        height: 100vh;
+        width: 50%;
+        padding: 5rem 5rem 0 10rem;
+        font-size: 35pt;
+    }
+
+    span {
+        display: flex;
+    }
+
+    .whats,
+    .how {
+        margin-top: 7.5rem;
+        background-color: #fff;
+        color: #DF8480;
+        font-size: 40pt;
+    }
+
+    .boxer {
+        flex-direction: row;
+        margin-top: 5rem;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        margin: 0 2rem;
+        height: 15rem;
+        width: 30rem;
+        overflow: scroll;
+        border-radius: 1rem;
+        box-shadow: 0rem .5rem .5rem .3rem lightgray;
+    }
+
+    .box h2 {
+        margin: 1rem 4rem;
+    }
+
+    .whats {
+        margin: 5rem auto;
+    }
+
+    .popel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .after_bowl {
+        padding: 0;
+        align-self: center;
+        margin: 0;
+
+
+    }
+
+    .span_bowl {
+        background-color: #DF8480;
+        width: 40%;
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 1rem;
+        color: #fff;
+        font-family: nun;
+    }
+
+    .b {
+        margin-right: -3rem;
+    }
+
+    .back {
+        border-radius: .5rem;
+        margin: 2rem;
+    }
+
+    .fofo {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:1201px) {
+    .back_bowl {
+        display: flex;
+        width: 100%;
+    }
+
+    .back {
+        width: 50%;
+        height: 30vh;
+    }
+
+    .bowl {
+        width: 50%;
+        background-size: auto;
+        background-position: center;
+        height: 22rem;
+    }
+
+    footer h2 {
+        font-size: 16pt;
+    }
+
+    form {
+        padding: 1rem 29rem;
+    }
+
+    .footer_div {
+        justify-content: flex-start;
+    }
+
+    footer p {
+        margin-top: 5rem;
+    }
+
+    header {
+        background: none;
+    }
+
+    .new_back {
+        background-image: url("../img/dog_catching_snack.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 50%;
+    }
+
+    header span h3 {
+        margin: 0;
+        background-color: #DF8480;
+        color: #fff;
+        height: 100vh;
+        width: 50%;
+        padding: 5rem 5rem 0 10rem;
+        font-size: 35pt;
+    }
+
+    span {
+        display: flex;
+    }
+
+    .whats,
+    .how {
+        margin-top: 7.5rem;
+        background-color: #fff;
+        color: #DF8480;
+        font-size: 40pt;
+    }
+
+    .boxer {
+        flex-direction: row;
+        margin-top: 5rem;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        margin: 0 2rem;
+        height: 15rem;
+        width: 30rem;
+        overflow: scroll;
+        border-radius: 1rem;
+        box-shadow: 0rem .5rem .5rem .3rem lightgray;
+    }
+
+    .box h2 {
+        margin: 1rem 4rem;
+    }
+
+    .whats {
+        margin: 5rem auto;
+    }
+
+    .popel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .after_bowl {
+        padding: 0;
+        align-self: center;
+        margin: 0;
+    }
+
+    .span_bowl {
+        background-color: #DF8480;
+        width: 40%;
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 1rem;
+        color: #fff;
+        font-family: nun;
+    }
+
+    .b {
+        margin-right: -3rem;
+    }
+
+    .back {
+        border-radius: .5rem;
+        margin: 2rem;
+    }
+
+    .fofo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        padding: 5rem 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 20pt;
+    }
+
+    input[type="email"] {
+        font-size: 20pt;
+    }
+}
